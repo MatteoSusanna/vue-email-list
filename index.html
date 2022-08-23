@@ -12,7 +12,7 @@
 
         <div id="app" class="box">
             <ul>
-                <li v-for="mail in mailCasuale">{{mail}}</li>
+                <li v-if="mailCasuale.length == 10" v-for="mail in mailCasuale">{{mail}}</li>
             </ul>
             
         </div>
